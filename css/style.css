@@ -12,12 +12,13 @@ body {
     min-height: 100vh;
 }
 
+/*CABEÇALHO*/
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #fff;
+    background-color: #f8f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
@@ -42,14 +43,39 @@ body {
 
 .nav__list li a {
     text-decoration: none;
-    color: #3004f5;
+    color: #3207f4;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .nav__list li a:hover {
-    color: #4fc4d9;
+    color: #358cf7;
+}
+
+/*CONTEUDO*/
+.main{
+display: flex;
+flex-direction: column;
+flex: 1;
+margin: 0;
+padding: 0;
+height: 100vh;
+overflow: hidden;
+}
+
+.main__conteudo-img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.main__conteudo-texto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #616161;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5;
 }
 
 /*RODAPÉ*/
