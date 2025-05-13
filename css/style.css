@@ -52,48 +52,55 @@ body {
     color: #4fc4d9;
 }
 
+/*RODAPÉ*/
 .footer {
+    background-color: #002366;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #002366;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-    /* Garante responsividade */
 }
 
-.footer div,
-.footer nav {
-    flex: 1;
-    text-align: center;
-}
-
-.footer nav ul {
-    list-style: none;
+.footer__redes-sociais {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.footer nav ul li a img {
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.footer nav ul li a img:hover {
-    transform: scale(1.1);
-    /* Efeito suave no hover */
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
     margin: 0;
-    font-size: 14px;
-    color: #fdfdfd;
 }
 
-.footer img[alt="logo ford"] {
-    height: 50px;
+.footer__redes-sociais ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+}
+
+.footer__redes-sociais li a {
+    display: block;
+}
+
+.footer__redes-sociais li img {
+    max-width: 25px;
+    height: auto;
+}
+
+.footer__direitos {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+}
+
+.footer__logo-rodape img{
+    display: flex;
+    align-items: center;
 }
