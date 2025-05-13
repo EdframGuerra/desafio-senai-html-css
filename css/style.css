@@ -51,3 +51,49 @@ body {
 .nav__list li a:hover {
     color: #4fc4d9;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #002366;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    /* Garante responsividade */
+}
+
+.footer div,
+.footer nav {
+    flex: 1;
+    text-align: center;
+}
+
+.footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer nav ul li a img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.footer nav ul li a img:hover {
+    transform: scale(1.1);
+    /* Efeito suave no hover */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fdfdfd;
+}
+
+.footer img[alt="logo ford"] {
+    height: 50px;
+}
