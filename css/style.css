@@ -87,6 +87,7 @@ overflow: hidden;
     align-items: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .footer__redes-sociais {
