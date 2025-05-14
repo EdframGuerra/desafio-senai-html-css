@@ -45,38 +45,158 @@ body {
     text-decoration: none;
     color: #3207f4;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 2rem;
     transition: color 0.3s;
 }
 
 .nav__list li a:hover {
-    color: #358cf7;
+    background-color: #3207f4;
+    color: white;
 }
-
 /*CONTEUDO*/
-.main{
-display: flex;
-flex-direction: column;
-flex: 1;
-margin: 0;
-padding: 0;
-height: 100vh;
-overflow: hidden;
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.main__conteudo-img{
+.main__principal {
+    display: block;
+    height: 100%;
+
+}
+
+.main__conteudo-img {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
+    padding: 1rem;
 }
 
-.main__conteudo-texto{
+.main__conteudo-texto {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #616161;
+    color: #3c3b3b;
+    font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
     line-height: 1.5;
 }
+
+.main__iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1re;
+    height: 100%;
+    width: auto;
+    flex-grow: 1;
+}
+
+.main__iframe iframe {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 2;
+}
+
+.main__galeria {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    padding: 1rem;
+}
+
+.main__tabela {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    font-family: Georgia, serif;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main__tabela img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main__tabela-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #3207f4;
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.main__tabela-texto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #616161;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.main__tabela-info{
+    padding: 10px;
+    font-size: ;
+    color: #444;
+    line-height: 1.6;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.main-buttton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.main-buttton button {
+    padding: 10px 20px;
+    background-color: #0c46f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-buttton button:hover {
+    background-color: #6ba4f3;
+}
+
 
 /*RODAPÉ*/
 .footer {
@@ -127,7 +247,7 @@ overflow: hidden;
     margin: 0;
 }
 
-.footer__logo-rodape img{
+.footer__logo-rodape img {
     display: flex;
     align-items: center;
 }
