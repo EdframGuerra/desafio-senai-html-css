@@ -162,7 +162,7 @@ body {
 
 .main__tabela-info{
     padding: 10px;
-    font-size: ;
+    font-size:12px ;
     color: #444;
     line-height: 1.6;
     text-align: left;
@@ -197,7 +197,25 @@ body {
     background-color: #6ba4f3;
 }
 
+.main__conteudo-form{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
+.main_formulario{
+
+}
+
+.main__conteudo-img{
+
+}
+
+.main_texto-form{
+
+}
+
+.main__formulario-contato{}
 /*RODAPÉ*/
 .footer {
     background-color: #002366;
