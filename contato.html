@@ -10,14 +10,9 @@
 
 <body>
     <header class="header">
-        <!--aqui será implementado o cabeçalho da pagina-->
-
         <div class="header__logo">
-            <!--logo-->
             <img src="/images/ford-96.png" alt="logo ford">
         </div>
-
-        <!--menu navegação de paginas-->
         <nav class="header__nav">
             <ul class="nav__list">
                 <li><a href="/index.html">Home</a></li>
@@ -27,58 +22,53 @@
         </nav>
     </header>
     <main class="main">
-        <section>
-
-            <div class="main__conteudo-form">
-                <div class="main__conteudo-img">
-                    <img src="/images/storm.jpg" alt="Ford Ranger Storm 3.2 Diesel 4x4 ">
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-image">
+                    <img src="/images/storm.jpg" alt="Ford Ranger Storm 3.2 Diesel 4x4">
                 </div>
-                <div class="main_formulario">
-                    <div class="main_texto-form">
-                        <p>
-                            Fale conosco
-                        </p>
+                <div class="contact-form">
+                    <div class="form-header">
+                        <p>Fale conosco</p>
                     </div>
-                    <div class="main__formulario-contato"></div>
-                        <input type="text" placeholder="Nome:"><br>
-                        <input type="text" placeholder="E-mail:"><br>
-                        <input type="text" placeholder="Telefone:"><br>
-                        <select>
-                            <option>Como prefere ser contactado? </option>
-                            <option>E-mail:</option>
-                            <option>Telefone:</option>
+                    <form>
+                        <input type="text" placeholder="Nome:" class="form-input"><br>
+                        <input type="email" placeholder="E-mail:" class="form-input"><br>
+                        <input type="tel" placeholder="Telefone:" class="form-input"><br>
+                        <select class="form-select">
+                            <option>Como prefere ser contactado?</option>
+                            <option>E-mail</option>
+                            <option>Telefone</option>
                         </select><br>
-                        <input type="textarea" placeholder="Mensagem:">
-                    </div>
+                        <textarea placeholder="Mensagem:" class="form-textarea"></textarea><br>
+                        <button type="submit" class="form-button">Enviar</button>
+                    </form>
                 </div>
 
-                <div class="main-buttton">
-                    <button>Enviar</button>
-                </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="footer__redes-sociais">
-                <p>Redes Sociais</p>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.facebook.com/FordBrasil/" target="_blank"
-                                rel="noopener noreferrer"><img src="/images/facebook-50.png"
-                                    alt="Link para o Facebook"></a></li>
-                        <li><a href="https://www.instagram.com/fordbrasil/" target="_blank"
-                                rel="noopener noreferrer"><img src="images/instagram-logo-50.png"
-                                    alt="Link para o Instagram"></a></li>
-                        <li><a href="https://www.youtube.com/fordbrasil" target="_blank" rel="noopener noreferrer"><img
-                                    src="images/youtube-squared-50.png" alt="Link para o YouTube"></a></li>
-                    </ul>
-                </nav>
+        <footer>
+            <div class="footer">
+                <div class="footer__redes-sociais">
+                    <p>Redes Sociais</p>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.facebook.com/FordBrasil/" target="_blank"
+                                    rel="noopener noreferrer"><img src="/images/facebook-50.png"
+                                        alt="Link para o Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/fordbrasil/" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/instagram-logo-50.png"
+                                        alt="Link para o Instagram"></a></li>
+                            <li><a href="https://www.youtube.com/fordbrasil" target="_blank"
+                                    rel="noopener noreferrer"><img src="images/youtube-squared-50.png"
+                                        alt="Link para o YouTube"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="footer__direitos">&copy; 2025 Ford Motor Company. Todos os direitos reservados.</p>
+                <div class="footer__logo-rodape"><img src="/images/ford-96.png" alt="Logo Ford"></div>
             </div>
-            <p class="footer__direitos">&copy; 2025 Ford Motor Company. Todos os direitos reservados.</p>
-            <div class="footer__logo-rodape"><img src="/images/ford-96.png" alt="Logo Ford"></div>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
