@@ -196,88 +196,26 @@ body {
 .main-buttton button:hover {
     background-color: #6ba4f3;
 }
-.contact-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f9f9f9;
+
+.main__conteudo-form{
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    max-width: 1200px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+.main_formulario{
+
 }
 
-.contact-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px 0 0 8px;
+.main__conteudo-img{
+
 }
 
-.contact-form {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main_texto-form{
+
 }
 
-.form-header p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    color: #160b48;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.form-input,
-.form-select,
-.form-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.form-textarea {
-    height: 100px;
-    resize: none;
-}
-
-.form-button {
-    padding: 10px 20px;
-    background-color: #0c46f6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form-button:hover {
-    background-color: #6ba4f3;
-}
+.main__formulario-contato{}
 /*RODAPÉ*/
 .footer {
     background-color: #002366;
