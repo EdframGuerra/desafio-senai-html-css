@@ -235,7 +235,7 @@ body {
 .form-header p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
-    color: #3207f4;
+    color: #160b48;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -270,6 +270,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .form-button:hover {
     background-color: #6ba4f3;
 }
