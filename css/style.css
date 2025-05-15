@@ -1,30 +1,36 @@
+/* Estilos gerais (para telas maiores) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   Layout Base
+   ========================= */
 html,
 body {
     background-color: #fdfdfd;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*CABEÇALHO*/
+/* =========================
+   Header
+   ========================= */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 1rem 2rem;
     background-color: #f8f5f5;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .header__logo img {
-    height: 60px;
+    height: 4rem;
 }
 
 .header__nav {
@@ -36,7 +42,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 2rem;
     padding: 0;
     margin: 0;
 }
@@ -44,8 +50,7 @@ body {
 .nav__list li a {
     text-decoration: none;
     color: #3207f4;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: color 0.3s;
 }
 
@@ -53,21 +58,21 @@ body {
     background-color: #3207f4;
     color: white;
 }
-/*CONTEUDO*/
+
+/* =========================
+   Main
+   ========================= */
 .main {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
+    padding: 0.1rem;
 }
 
 .main__principal {
     display: block;
-    height: 100%;
-
+    width: 100%;
 }
 
 .main__conteudo-img {
@@ -77,56 +82,56 @@ body {
     padding: 1rem;
 }
 
+.main__conteudo-img img {
+    max-width: 100%;
+    height: auto;
+}
+
 .main__conteudo-texto {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #3c3b3b;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
     line-height: 1.5;
 }
 
 .main__iframe {
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin: 1re;
-    height: 100%;
-    width: auto;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .main__iframe iframe {
-    width: 100%;
-    max-width: 900px;
+    display: block;
+    width: 60%;
+    max-width: 800px;
     aspect-ratio: 16 / 9;
     height: auto;
-    display: flex;
-    box-sizing: border-box;
-    padding: 2rem;
-    margin: 2;
+    border: 0;
 }
 
+/* =========================
+   Galeria e Tabelas
+   ========================= */
 .main__galeria {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
     gap: 1rem;
-    align-items: center;
-    padding: 1rem;
     padding: 1rem;
 }
 
 .main__tabela {
     border-collapse: collapse;
-    width: 100%;
+    width: calc(33% - 1rem);
     max-width: 400px;
     text-align: left;
-    font-family: Georgia, serif;
     background-color: #f0f0f0;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .main__tabela img {
@@ -139,56 +144,61 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-    width: 20px;
-    height: 20px;
+    padding: 0.5rem;
+}
+
+.main__tabela-checkbox input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
     cursor: pointer;
     appearance: none;
-    border: 2px solid #3207f4;
-    border-radius: 4px;
+    border: 0.1rem solid #3207f4;
+    border-radius: 0.2rem;
     background-color: #fdfdfd;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .main__tabela-texto {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #616161;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
-    padding: 1rem;
-    line-height: 1.5;
+    padding: 0.5rem;
+    line-height: 1.3;
 }
 
-.main__tabela-info{
-    padding: 10px;
-    font-size:12px ;
+.main__tabela-info {
+    padding: 0.5rem;
+    font-size: 0.7rem;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.4;
     text-align: left;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border-top: 0.05rem solid #ccc;
     background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
 }
 
+.main__tabela-info img {
+    max-width: 1.5rem;
+    height: auto;
+}
+
+/* =========================
+   Botão Principal
+   ========================= */
 .main-buttton {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 1rem;
-    margin: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
 }
 
 .main-buttton button {
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     background-color: #0c46f6;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 2rem;
-    font-family: Georgia, serif;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -197,48 +207,136 @@ body {
     background-color: #6ba4f3;
 }
 
-.main__conteudo-form{
-display: flex;
-align-items: center;
-justify-content: center;
+/* =========================
+   Contato
+   ========================= */
+.contact-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
 }
 
-.main_formulario{
-
+.contact-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    padding: 1rem;
 }
 
-.main__conteudo-img{
-
+.contact-image {
+    flex: 1;
 }
 
-.main_texto-form{
-
+.contact-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.main__formulario-contato{}
-/*RODAPÉ*/
+.contact-form {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header p {
+    font-size: 1.5rem;
+    color: #160b48;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-textarea {
+    height: 8rem;
+    resize: vertical;
+}
+.form-button {
+    padding: 0.3em 1em;
+    background-color: #0c46f6;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    align-self: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-button:hover {
+    background-color: #6ba4f3;
+}
+
+/* =========================
+   Footer
+   ========================= */
 .footer {
     background-color: #002366;
-    padding: 20px 50px;
+    padding: 1.3rem 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -0.1rem 0.2rem rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
     margin-top: auto;
+    gap: 1rem;
+    text-align: center;
 }
 
 .footer__redes-sociais {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.footer p {
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1rem;
-    margin: 0;
+.footer__logo-rodape {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.footer__logo-rodape img {
+    max-height: 3rem;
+    height: auto;
+    width: auto;
+    display: block;
+}
+
+.footer__redes-sociais-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .footer__redes-sociais ul {
@@ -254,18 +352,162 @@ justify-content: center;
 }
 
 .footer__redes-sociais li img {
-    max-width: 25px;
+    max-width: 1.5rem;
     height: auto;
+}
+
+.footer p {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .footer__direitos {
     color: white;
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 0.7rem;
     margin: 0;
+    flex-basis: 100%;
+    order: 2;
 }
 
-.footer__logo-rodape img {
-    display: flex;
-    align-items: center;
+/* =========================
+   Media Queries
+   ========================= */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer__redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer__logo-rodape {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+
+    .footer__redes-sociais-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .footer__redes-sociais {
+        margin-bottom: 0.5rem;
+        order: 1;
+    }
+
+    .footer__direitos {
+        order: 2;
+        flex-basis: auto;
+    }
+
+    .footer__logo-rodape {
+        order: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .footer__redes-sociais li img {
+        max-width: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main__galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__tabela {
+        width: 80%;
+        max-width: none;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .contact-image img {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .header__logo {
+        margin-bottom: 1rem;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav__list li a {
+        font-size: 1.2rem;
+    }
+
+    .main__conteudo-texto {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo img {
+        height: 3rem;
+    }
+
+    .nav__list li a {
+        font-size: 1rem;
+    }
+
+    .main__conteudo-texto {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        padding: 0.5rem;
+    }
+
+    .form-header p {
+        font-size: 1.3rem;
+    }
+
+    .main-buttton button {
+        font-size: 1rem;
+        padding: 0.3rem 0.8rem;
+    }
 }
